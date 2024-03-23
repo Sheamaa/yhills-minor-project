@@ -1,0 +1,46 @@
+body {
+    font-family: "Kalam", cursive;
+    font-weight: bolder;
+    background-color: #F7EDDA;
+    color: #806561;
+}
+
+.card {
+    max-width:50rem;
+}
+
+#tasks {
+    width: 100%;
+    font-weight: normal;
+}
+
+#tasks li {
+    list-style: none;  
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#tasks li::before{
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 25%;
+    background-color: #997D79;
+    position: absolute;
+    left: -25px;
+    top: 3px;
+}
+
+#tasks li.checked{
+    opacity: 0.75;
+    text-decoration: line-through;
+}
+
+#tasks li.checked::before{
+    background-color: #709849;   
+}
